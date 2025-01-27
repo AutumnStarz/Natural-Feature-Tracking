@@ -13,14 +13,19 @@
       <!-- NFT Marker Setup -->
       <a-nft 
         type="nft" 
-        url="assets/markers"
+        url="https://coemergencelab.com/ar/imagetrack-animation/nft/starbucks/starbucks-image/starbucks"
         smooth="true" 
         smoothCount="10" 
         smoothTolerance="0.01" 
         smoothThreshold="5">
         
-        <!-- Square -->
-        <a-box position="50 150 0" material="color: red;"></a-box>
+        <!-- 3D Animation -->
+        <a-entity 
+          gltf-model="https://coemergencelab.com/ar/imagetrack-animation/tiger.glb"
+          scale="150 150 150" 
+          position="100 0 0"
+          animation-mixer="clip: *;">
+        </a-entity>
       </a-nft>
       
       <!-- Camera -->
